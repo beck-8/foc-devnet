@@ -8,9 +8,8 @@
 name: CI (Pull Request)
 
 on:
-  pull_request:
   push:
-    branches: ['main']
+    branches: ['beck/runson-devnet']
 
 jobs:
   lint:
@@ -60,4 +59,3 @@ jobs:
       name: default
       profile: default
       enable_reporting: false
-    secrets: inherit
